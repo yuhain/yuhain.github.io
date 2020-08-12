@@ -1,0 +1,63 @@
+.eb-bg{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Image/e-book/aliis-sinisalu-yzVxz_OYVxU-unsplash.jpg);
+  background-size: cover;
+}
+
+.news-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(../Image/Newspaper/rishabh-sharma-R-js25Pv1LQ-unsplash.jpg);
+  background-size: cover;
+}
+
+
+.ix-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Image/Home-slide/ed-robertson-eeSdJfLfx1A-unsplash.jpg);
+  background-size: cover;
+}
+
+.contact-bg:not(.row){
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Image/ContactUs/customerCare.jpg);
+    background-size: cover;
+}
+
+.oj-bg .carousel-indicators > li, .od-bg .carousel-indicators > li, .eb-bg .carousel-indicators > li, .news-bg .carousel-indicators > li{
+  color: #white;
+  font-size: 14px;
+  text-indent: 0;
+  text-align: center;
+  line-height: 30px;
+  width: 40px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.carousel-inner .dropdown-menu {
+   background: #949494;
+}
+
+.od-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Image/onlineDatabese/andrew-neel-cckf4TsHAuw-unsplash.jpg);
+  background-size: cover;
+}
+
+.od-bg .card, .od-bg .card-header{
+  border-color: black;
+}
+
+.oj-bg .card {
+  height: 500px;
+}
+
+.oj-bg .card-body {
+  overflow: scroll;
+}
+
+.oj-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Image/onlineJournal/journal-1.jpg);
+  background-size: cover;
+}
+
+.oj-bg .card, .oj-bg .card-header{
+  border-color: brown;
+}

@@ -1,0 +1,11 @@
+.chi {
+  display: none;
+}
+
+#chinese_nav {
+    display:none;
+}
+
+#eng_nav {
+    display:flex;
+}
