@@ -1,0 +1,951 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Malaysian Public Library</title>
+  </head>
+  <body class="od-bg">
+    <!-- NavBar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" id="eng_nav">
+      <!-- Title Website -->
+      <a class="navbar-brand" href="index.html"><h1 style="color:#F5502D; font-family:Anton;">MPL</h1></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigation -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+        <!-- About Us -->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About Us
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <!-- Dropdown option -->
+              <a class="dropdown-item" href="about-us.html">Introduction</a>
+              <a class="dropdown-item" href="#">Publications</a>
+            </div>
+          </li>
+
+          <!-- OPAC -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">OPAC<span class="sr-only">(current)</span></a>
+          </li>
+
+          <!-- Research -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Research</a>
+          </li>
+
+          <!-- Resources -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Resources
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <!-- Dropdown option -->
+              <a class="dropdown-item" href="onlineDatabase.html">Online Databases</a>
+              <a class="dropdown-item" href="onlineJournal.html">Online Journals</a>
+              <a class="dropdown-item" href="ebook.html">e-Books</a>
+              <a class="dropdown-item" href="#">Multimedia Resources</a>
+              <a class="dropdown-item" href="enewspapers.html">Old e-Newspapers </a>
+            </div>
+          </li>
+
+          <!-- Events -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Events
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <!-- Dropdown option -->
+              <a class="dropdown-item" href="#">Cultural Activities</a>
+              <a class="dropdown-item" href="#">Exhibitions</a>
+              <a class="dropdown-item" href="#">Awards/Competitions</a>
+              <a class="dropdown-item" href="#">Reading Activities</a>
+              <a class="dropdown-item" href="#">Talks/Workshops</a>
+            </div>
+          </li>
+
+          <!-- Sponsorship -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sponsorship</a>
+          </li>
+
+          <!-- Careers -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Career</a>
+          </li>
+
+          <!-- Membership -->
+          <li class="nav-item">
+            <a class="nav-link" href="membership.html">Membership</a>
+          </li>
+
+          <!-- Contact Us -->
+          <li class="nav-item">
+            <a class="nav-link" href="contactUs.html">Contact Us</a>
+          </li>
+        </ul>
+        <div>
+          <button id="en_click" type="button" class="btn btn-danger">English</button>
+          <h7 style="color: white; font-size: 20px;">/</h7>
+          <button id="chi_click" type="button" class="btn btn-danger mr-3">Chinese</button>
+        </div>
+
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+
+    </nav>
+
+    <!-- chinese -->
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="chinese_nav">
+      <!-- Title Website -->
+      <a class="navbar-brand" href="index.html"><h1 style="color:#F5502D; font-family:Anton;">MPL</h1></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigation -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+          <!-- About Us -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            关于我们
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <!-- Dropdown option -->
+              <a class="dropdown-item" href="about-us.html">简介</a>
+              <a class="dropdown-item" href="#">图书馆出版刊物</a>
+            </div>
+          </li>
+
+          <!-- OPAC -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">查询书籍<span class="sr-only">(current)</span></a>
+          </li>
+
+          <!-- Research -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">研究</a>
+          </li>
+
+          <!-- Resources -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            电子资源
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <!-- Dropdown option -->
+              <a class="dropdown-item" href="onlineDatabase.html">网络资源库 </a>
+              <a class="dropdown-item" href="onlineJournal.html">网络期刊</a>
+              <a class="dropdown-item" href="ebook.html">电子书</a>
+              <a class="dropdown-item" href="#">多媒体资源</a>
+              <a class="dropdown-item" href="enewspapers.html">旧报纸</a>
+            </div>
+          </li>
+
+          <!-- Events -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            推广活动
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <!-- Dropdown option -->
+              <a class="dropdown-item" href="#">文化活动 </a>
+              <a class="dropdown-item" href="#">展览  </a>
+              <a class="dropdown-item" href="#">比赛  </a>
+              <a class="dropdown-item" href="#">阅读活动</a>
+              <a class="dropdown-item" href="#">讲座/工作坊   </a>
+            </div>
+          </li>
+
+          <!-- Sponsorship -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">赞助</a>
+          </li>
+
+          <!-- Careers -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">人才招聘</a>
+          </li>
+
+          <!-- Membership -->
+          <li class="nav-item">
+            <a class="nav-link" href="membership.html">会员</a>
+          </li>
+
+          <!-- Contact Us -->
+          <li class="nav-item">
+            <a class="nav-link" href="contactUs.html">联系我们</a>
+          </li>
+        </ul>
+        <div>
+          <button id="en_click2" type="button" class="btn btn-danger">English</button>
+          <h7 style="color: white; font-size: 20px;">/</h7>
+          <button id="chi_click2" type="button" class="btn btn-danger mr-3">Chinese</button>
+        </div>
+
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+
+    </nav>
+
+
+    <div class="container-fluid" style="height: 640px;">
+      <h1 class="display-4 text-center mb-5 text-white">Online Resources</h1>
+
+
+      <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-interval="false">
+        <ol class="carousel-indicators" style="bottom: -70px;">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active">A-C</li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1">D-G</li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2">H-J</li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="3">M-O</li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="4">P-T</li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="5">U-W</li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="container-sm">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md ml-1 mr-1" style="height: 450px;">
+                  <div class="card bg-light" style="height: 348px;" data-aos="zoom-in">
+                    <h5 class="card-header text-center text-body">A</h5>
+                    <div class="card-body">
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Academic Journals
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="https://academicjournals.org/search" target="_blank"><img src="Image\onlineDatabese\logo_2x.png" href="https://www.google.com.my/" class="rounded mx-auto d-block w-50" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="dropdown">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Alkem Digital Library (Access via u-Pustaka Portal)
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="https://www.u-library.gov.my/portal/web/guest/home" target="_blank"><img src="Image\onlineDatabese\tablet_banner_top.jpg" class="rounded mx-auto d-block w-100" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md ml-1 mr-1" style="height: 450px;">
+                  <div class="card bg-light" style="height: 348px;" data-aos="zoom-in">
+                    <h5 class="card-header text-center text-body">B</h5>
+                    <div class="card-body">
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          BLIS (Access via u-Pustaka Portal)
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="https://www.u-library.gov.my/portal/web/guest/home" target="_blank"><img src="Image\onlineDatabese\tablet_banner_top.jpg" class="rounded mx-auto d-block w-100" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Bartleby.com
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="https://www.bartleby.com/" target="_blank"><img src="Image\onlineDatabese\bartleby-logo-tm.png" class="rounded mx-auto d-block" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          British Library Blogs
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="http://www.bl.uk/blogs" target="_blank"><img src="Image\onlineDatabese\bl_logo_100.jpg" class="rounded mx-auto d-block" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md ml-1 mr-1" style="height: 450px;">
+                  <div class="card bg-light" style="height: 348px;" data-aos="zoom-in">
+                    <h5 class="card-header text-center text-body">C</h5>
+                    <div class="card-body">
+
+                        <div class="dropdown mb-3">
+                          <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CERN Document Server
+                          </button>
+                          <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                            <div class="col-md">
+                              <hr><a class="dropdown-item" href="http://cds.cern.ch/" target="_blank"><img src="Image\onlineDatabese\cern-logo-large.png" class="rounded mx-auto d-block w-25" alt="..."></a><hr>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="dropdown mb-3">
+                          <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CiteSeerX
+                          </button>
+                          <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                            <div class="col-md">
+                              <hr><a class="dropdown-item" href="http://citeseerx.ist.psu.edu/index;jsessionid=6C6E632174E57F3A97284E672206C028" target="_blank"><img src="Image\onlineDatabese\csx_logo_front.png" class="rounded mx-auto d-block w-25" alt="..."></a><hr>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="dropdown mb-3">
+                          <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CUHK Electronic Theses & Dissertations Collection
+                          </button>
+                          <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                            <div class="col-md">
+                              <hr><a class="dropdown-item" href="https://repository.lib.cuhk.edu.hk/en/collection/etd" target="_blank"><img src="Image\onlineDatabese\logo.png" class="rounded mx-auto d-block w-100" alt="..."></a><hr>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md ml-1 mr-1" style="height: 450px;">
+                  <div class="card bg-light" style="height: 348px;">
+                    <h5 class="card-header text-center text-body">D</h5>
+                    <div class="card-body">
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Dart-Europe E-theses Portal
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="http://www.dart-europe.eu/basic-search.php" target="_blank"><img src="Image\onlineDatabese\dart-logo-transparent.gif" class="rounded mx-auto d-block w-50" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Digital Commons Network
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="http://network.bepress.com/" target="_blank"><img src="Image\onlineDatabese\DCsunburst.png" class="rounded mx-auto d-block" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          DOAB: Directory of Open Access Books
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="https://www.doabooks.org/doab?func=search&uiLanguage=en" target="_blank"><img src="Image\onlineDatabese\doab.png" class="rounded mx-auto d-block w-75" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          DOAJ Directory of Open Access Journals
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="https://doaj.org/" target="_blank"><img src="Image\onlineDatabese\logo_cropped.jpg" class="rounded mx-auto d-block w-75" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md ml-1 mr-1" style="height: 450px;">
+                  <div class="card bg-light" style="height: 348px;">
+                    <h5 class="card-header text-center text-body">E</h5>
+                    <div class="card-body">
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          ERIC Education Resources Information Center
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="https://eric.ed.gov/" target="_blank"><img src="Image\onlineDatabese\eric_large.png" class="rounded mx-auto d-block w-75" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          EThOS Electronic Theses Online Service
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="https://ethos.bl.uk/About.do" target="_blank"><img src="Image\onlineDatabese\bl_logo_100.jpg" class="rounded mx-auto d-block" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          English Repository
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="https://englishrep.wordpress.com/" target="_blank"><img src="Image\onlineDatabese\Capture.png" class="rounded mx-auto d-block w-50" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md ml-1 mr-1" style="height: 450px;">
+                  <div class="card bg-light" style="height: 348px;">
+                    <h5 class="card-header text-center text-body">G</h5>
+                    <div class="card-body">
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Google Books Search
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="https://books.google.com/" target="_blank"><img src="Image\onlineDatabese\google_book.png" class="rounded mx-auto d-block w-75" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Google Scholar
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="https://scholar.google.com.my/" target="_blank"><img src="Image\onlineDatabese\scholar_logo_64dp.png" class="rounded mx-auto d-block w-100" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md ml-1 mr-1" style="height: 450px;">
+                  <div class="card bg-light" style="height: 348px;">
+                    <h5 class="card-header text-center text-body">H</h5>
+                    <div class="card-body">
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Hong Kong University Theses Online
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="http://hub.hku.hk/advanced-search?field1=title&thesis=1" target="_blank"><img src="Image\onlineDatabese\hku-logo.jpg" class="rounded mx-auto d-block w-100" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md ml-1 mr-1" style="height: 450px;">
+                  <div class="card bg-light" style="height: 348px;">
+                    <h5 class="card-header text-center text-body">I</h5>
+                    <div class="card-body">
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          IDEAS - Economics and Finance Research
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="https://ideas.repec.org/" target="_blank"><img src="Image\onlineDatabese\ideas4.jpg" class="rounded mx-auto d-block w-50" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Internet Archive
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="https://archive.org/" target="_blank"><img src="Image\onlineDatabese\download.png" class="rounded mx-auto d-block w-75" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md ml-1 mr-1" style="height: 450px;">
+                  <div class="card bg-light" style="height: 348px;">
+                    <h5 class="card-header text-center text-body">J</h5>
+                    <div class="card-body">
+
+                        <div class="dropdown mb-3">
+                          <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            JAIRO
+                          </button>
+                          <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                            <div class="col-md">
+                              <hr><a class="dropdown-item" href="https://irdb.nii.ac.jp/en" target="_blank"><img src="Image\onlineDatabese\logo-l.png" class="rounded mx-auto d-block w-100" alt="..."></a><hr>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="dropdown mb-3">
+                          <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            JURN
+                          </button>
+                          <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                            <div class="col-md">
+                              <hr><a class="dropdown-item" href="http://jurn.org/#gsc.tab=0" target="_blank"><img src="Image\onlineDatabese\jurn-2013-logo.jpg" class="rounded mx-auto d-block w-50" alt="..."></a><hr>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md ml-1 mr-1" style="height: 450px;">
+                  <div class="card bg-light" style="height: 348px;">
+                    <h5 class="card-header text-center text-body">M</h5>
+                    <div class="card-body">
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          MagPortal
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="http://www.magportal.com/" target="_blank"><img src="Image\onlineDatabese\logo4.png" class="rounded mx-auto d-block w-50" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          MyTO: Malaysian Thesis Online
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="http://myto.upm.edu.my/find/" target="_blank"><img src="Image\onlineDatabese\myto1.png" class="rounded mx-auto d-block w-100" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md ml-1 mr-1" style="height: 450px;">
+                  <div class="card bg-light" style="height: 348px;">
+                    <h5 class="card-header text-center text-body">N</h5>
+                    <div class="card-body">
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          NewspaperSG - NLB
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="https://eresources.nlb.gov.sg/newspapers/" target="_blank"><img src="Image\onlineDatabese\nwsSG.png" class="rounded mx-auto d-block w-100" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md ml-1 mr-1" style="height: 450px;">
+                  <div class="card bg-light" style="height: 348px;">
+                    <h5 class="card-header text-center text-body">O</h5>
+                    <div class="card-body">
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Overdrive (Access Via u-Pustaka Portal)
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="https://www.u-library.gov.my/portal/web/guest/home" target="_blank"><img src="Image\onlineDatabese\tablet_banner_top.jpg" class="rounded mx-auto d-block w-100" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          OAIster
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="https://oaister.worldcat.org/" target="_blank"><img src="Image\onlineDatabese\oaister.png" class="rounded mx-auto d-block w-50" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          OAJSE Open Access Journals Search Engine
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item text-center text-wrap" href="http://www.kkhsou.in/library/oajse/" target="_blank">OAJSE Open Access Journals Search Engine</a><hr>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md ml-1 mr-1" style="height: 450px;">
+                  <div class="card bg-light" style="height: 348px;">
+                    <h5 class="card-header text-center text-body">P</h5>
+                    <div class="card-body">
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          PQTD Open
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="https://pqdtopen.proquest.com/search.html?fbclid=IwAR2J7O1mFJw0v5D-xG0difpiIlPUXy1BO83E1Txxzi7JtzBich1y3FwLpqA" target="_blank"><img src="Image\onlineDatabese\logo_pqdtopen.gif" class="rounded mx-auto d-block w-50" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Pew Research Journalism Project
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="https://www.journalism.org/" target="_blank"><img src="Image\onlineDatabese\desktop-header.png" class="rounded mx-auto d-block w-100" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Perpustakaan Negara Malaysia
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="https://pnm.elib.com.my/" target="_blank"><img src="Image\onlineDatabese\pnm_logo.png" class="rounded mx-auto d-block w-25" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Project Gutenberg
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="http://www.gutenberg.org/wiki/Main_Page" target="_blank"><img src="Image\onlineDatabese\ProjectGutenberg.jpg" class="rounded mx-auto d-block w-50" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          PubMed
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank"><img src="Image\onlineDatabese\PubMed.png" class="rounded mx-auto d-block w-50" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md ml-1 mr-1" style="height: 450px;">
+                  <div class="card bg-light" style="height: 348px;">
+                    <h5 class="card-header text-center text-body">S</h5>
+                    <div class="card-body">
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          ScholarBank@NUS (Electronic Theses & Dissertations)
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="https://scholarbank.nus.edu.sg/" target="_blank"><img src="Image\onlineDatabese\logo_libraries.png" class="rounded mx-auto d-block w-75" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md ml-1 mr-1" style="height: 450px;">
+                  <div class="card bg-light" style="height: 348px;">
+                    <h5 class="card-header text-center text-body">T</h5>
+                    <div class="card-body">
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Teaching English
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item" href="http://www.teachingenglish.org.uk/" target="_blank"><img src="Image\onlineDatabese\teachingEnglish.png" class="rounded mx-auto d-block w-75 bg-primary" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          The Online Books Page
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item text-center" href="http://www.digital.library.upenn.edu/books/" target="_blank">The Online Books Page</a><hr>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Traditional Medicine Research Data Expanded (TMRDE)
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item text-center text-wrap" href="https://www.tmrjournals.com/tmrde/EN/article/advSearchArticle.do" target="_blank">Traditional Medicine Research Data Expanded (TMRDE)</a><hr>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Trove - National Library of Australia
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item text-center text-wrap" href="https://trove.nla.gov.au/newspaper/" target="_blank"><img src="Image\onlineDatabese\trove-colour.png" class="rounded mx-auto d-block w-50" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4 ml-1" style="height: 450px;">
+                  <div class="card bg-light" style="height: 348px; width: 343px;">
+                    <h5 class="card-header text-center text-body">U</h5>
+                    <div class="card-body">
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          u-Pustaka Portal
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item text-center text-wrap" href="https://www.u-library.gov.my/portal/web/guest/home" target="_blank"><img src="Image\onlineDatabese\tablet_banner_top.jpg" class="rounded mx-auto d-block w-100" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          United States Patent and Trade Office Database
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item text-center text-wrap" href="http://patft.uspto.gov/" target="_blank"><img src="Image\onlineDatabese\USPTOD.png" class="rounded mx-auto d-block w-50" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 mr-1" style="height: 348px;">
+                  <div class="card bg-light" style="height: 348px;  width: 343px;">
+                    <h5 class="card-header text-center text-body">W</h5>
+                    <div class="card-body">
+
+                      <div class="dropdown mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100 text-wrap" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Web Gallery of Art
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                          <div class="col-md">
+                            <hr><a class="dropdown-item text-center text-wrap" href="https://www.wga.hu/" target="_blank"><img src="Image\onlineDatabese\logo_libraries.png" class="rounded mx-auto d-block w-75" alt="..."></a><hr>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <footer class="page-footer font-small stylish-color-dark bg-dark mt-5 text-white">
+      <div class="container text-center text-md-left">
+        <div class="row">
+          <div class="col-md-3 mx-auto">
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Malaysian Public Library</h5>
+            <p>Malaysian Public Library(MPL) is a online website that allows people to gain access to various journals, articles and more online</p>
+          </div>
+    
+          <hr class="clearfix w-100 d-md-none">
+    
+          <div class="col-md-2 mx-auto">
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Resources</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">OPAC</a>
+              </li>
+              <li>
+                <a href="onlineDatabase.html">Online Databases</a>
+              </li>
+              <li>
+                <a href="onlineJornal.html">Online Journals</a>
+              </li>
+              <li>
+                <a href="ebook.html">e-Books</a>
+              </li>
+              <li>
+                <a href="#!">Multimedia Resources</a>
+              </li>
+              <li>
+                <a href="enewspaper.html">Old e-Newspapers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2 mx-auto">
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Events</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Cultural Activities</a>
+              </li>
+              <li>
+                <a href="#!">Exhibition</a>
+              </li>
+              <li>
+                <a href="#!">Awards/Compeitions</a>
+              </li>
+              <li>
+                <a href="#!">Reading Activities</a>
+              </li>
+              <li>
+                <a href="#!">Talks/Workshops</a>
+              </li>
+            </ul>
+          </div>
+    
+          <hr class="clearfix w-100 d-md-none">
+    
+          <div class="col-md-2 mx-auto">
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Sponsorship</a>
+              </li>
+              <li>
+                <a href="#!">Career</a>
+              </li>
+              <li>
+                <a href="membership.html">Membership</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mx-auto" >
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4"><a class="text-danger" href="contactUs.html">Contact Us</a></h5>
+            <address >
+              Address: <br>
+              2nd floor, Wisma HELP, Jalan Dungun
+              50490 Kuala Lumpur, Malaysia <br>
+              Tel:&nbsp;<a href="tel:603-2711-2000">603-2711 2000</a> <br>
+              Email:&nbsp; <a type="email" href= "mailto:mplrdc@help.edu.my">MPLRDC</a>
+            </address>
+          </div>
+        </div>
+      </div>
+    
+      <div class="footer-copyright text-center py-3">
+        © 2020 Copyright: HELP University
+      </div>
+    </footer>
+    
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+     AOS.init({
+        duration: 2000
+      });
+    </script>
+    <script src="js/language.js"></script>
+  </body>
+</html>
